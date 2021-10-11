@@ -6,15 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  phoneNumber = '';
 
   constructor() {}
 
+  updatePhone(ev: any) {
+    console.log('updatePhone, ev.detail.value = ', ev.detail.value);
+  }
+
   dateSelectedBasic(ev: any) {
-    console.log('dateSelectedBasic, ev = ', ev);
+    console.log('dateSelectedBasic, ev.detail.value = ', ev.detail.value);
   }
 
   dateSelected(ev: any) {
-    console.log('dateSelected, ev = ', ev);
+    console.log('dateSelected, ev.detail.value = ', ev.detail.value);
   }
 
   cancel(ev: any) {

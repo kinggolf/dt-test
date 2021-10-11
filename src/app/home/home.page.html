@@ -10,13 +10,18 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12" class="ion-padding">
-        <ion-datetime (ionChange)="dateSelectedBasic($event)"></ion-datetime>
+        <ion-input type="tel" value="{{ phoneNumber }}" (ionChange)="updatePhone($event)" minlength="14" maxlength="14"
+                   placeholder=" _ _ _ _ _ _ _ _ _ _" clearInput="true" style="font-size: 20px; font-weight: bold;">
+        </ion-input>
       </ion-col>
       <ion-col size="12" class="ion-padding">
         <ion-datetime displayFormat="MMMM DD, YYYY" max="2030-12-31" (ionCancel)="cancel($event)" (ionChange)="dateSelected($event)"
                       mode="ios" presentation="date" showDefaultButtons="true" size="fixed" showDefaultTitle="true">
           <div slot="title">Select Date</div>
         </ion-datetime>
+      </ion-col>
+      <ion-col size="12" class="ion-padding">
+        <ion-datetime (ionChange)="dateSelectedBasic($event)"></ion-datetime>
       </ion-col>
     </ion-row>
   </ion-grid>
