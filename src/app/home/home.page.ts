@@ -9,4 +9,15 @@ export class HomePage {
 
   constructor() {}
 
+  dateSelectedBasic(ev: any) {
+    console.log('dateSelectedBasic, ev = ', ev);
+  }
+
+  dateSelected(ev: any) {
+    console.log('dateSelected, ev = ', ev);
+  }
+
+  cancel(ev: any) {
+    console.log('cancel, ev = ', ev);
+  }
 }
