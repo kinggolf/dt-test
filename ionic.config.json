@@ -1,0 +1,7 @@
+{
+  "name": "dt-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
